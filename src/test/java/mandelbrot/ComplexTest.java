@@ -14,7 +14,9 @@ public class ComplexTest {
     private final Complex twoI = new Complex(0,2);
     private final Complex two = new Complex(2,0);
     private final double real = -12;
+    private final double real2 = 5;
     private final double imaginary = 10;
+    private final double imaginary2 = 4;
 
 
     @Test
@@ -133,4 +135,18 @@ public class ComplexTest {
         Complex c2 = new Complex(real, imaginary);
         assertEquals(c1.hashCode(), c2.hashCode());
     }
+
+    /** Tâche 2, creation des tests */
+
+    @Test
+    void testReal(){
+        Complex c1 = new Complex(real, imaginary);
+        Complex c2 = new Complex(real, 0);
+        assertEquals(c2,c1.real(real));
+        Complex c3 = new Complex(real2, imaginary2);
+        Complex c4 = new Complex(real2, 0);
+        assertEquals(c4,c3.real(real2));
+    }
+
+
 }
