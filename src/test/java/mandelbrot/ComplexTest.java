@@ -210,4 +210,21 @@ public class ComplexTest {
         Complex c2 = new Complex(4, 6);
         assertEquals(Math.sqrt(52), c2.modulus());
     }
+
+    @Test
+    void testpow() {
+
+    }
+
+    @Test
+    void testscale() {
+
+    }
+
+    @Test
+    void testequals() {
+
+    }
+
+
 }
