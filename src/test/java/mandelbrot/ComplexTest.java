@@ -176,4 +176,20 @@ public class ComplexTest {
         assertEquals(c6, c4.subtract(c5));
     }
 
+    @Test
+    void testMultiply() {
+        //test1
+        Complex c1 = new Complex(real, imaginary);
+        Complex c2 = new Complex(real, imaginary);
+        Complex c3 = new Complex(real * real - imaginary * imaginary,
+                real * imaginary + real * imaginary);
+        assertEquals(c3, c1.multiply(c2));
+        //test2
+        Complex c4 = new Complex(2, 1);
+        Complex c5 = new Complex(1, 2);
+        Complex c6 = new Complex(0, 5);
+        assertEquals(c6, c4.multiply(c5));
+    }
+
+
 }
