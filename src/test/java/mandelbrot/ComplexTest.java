@@ -213,7 +213,14 @@ public class ComplexTest {
 
     @Test
     void testpow() {
-
+        //test1
+        Complex c1 = new Complex(real, imaginary);
+        Complex c2 = new Complex(44, -240);
+        assertEquals(c2, c1.pow(2));
+        //test2
+        Complex c3 = new Complex(real2, imaginary2);
+        Complex c4 = new Complex(-115, 236);
+        assertEquals(c4, c3.pow(3));
     }
 
     @Test
