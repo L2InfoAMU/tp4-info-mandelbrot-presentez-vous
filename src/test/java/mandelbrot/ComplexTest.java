@@ -218,7 +218,14 @@ public class ComplexTest {
 
     @Test
     void testscale() {
-
+        //test1
+        Complex c1 = new Complex(real, imaginary);
+        Complex c2 = new Complex(-24, 20);
+        assertEquals(c2, c1.scale(2));
+        //test2
+        Complex c3 = new Complex(real2, imaginary2);
+        Complex c4 = new Complex(3*real2,3*imaginary2);
+        assertEquals(c4, c3.scale(3));
     }
 
     @Test
